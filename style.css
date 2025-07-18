@@ -1,0 +1,157 @@
+@font-face{
+    font-family:my-font;
+    src: url(fonts/Cute\ Notes.ttf);
+}
+
+@font-face{
+    font-family:my-other-font;
+    src:url(fonts/Hug\ Me\ Tight\ -\ OTF.otf);
+}
+
+body{
+    background-color:#f9f4e0;
+}
+.nav {
+    height:120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #f4e7b2;
+    position: relative;
+}
+
+.logo {
+    height: 300px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d96ea0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-links a:hover {
+    transform: scale(1.05);
+    color: #ac3d71;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 40px;
+        background-color: #f4e7b2;
+        border: 1px solid #d96ea0;
+        width: fit-content;
+        padding: 10px;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* HOME PAGE */
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.welcome-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    font-family: my-other-font;
+}
+
+.h2 {
+    font-size: 3rem;
+    text-align: center; 
+    margin: 0;
+    margin-bottom:10px;
+}
+
+.wmess {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom:8px;
+}
+
+
+    .abtbtn {
+    display: inline-block;
+    background-color: #d96ea0;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size:20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-start;
+}
+
+
+.abtbtn:hover {
+    background-color: #ac3d71;
+    transform: scale(1.05);
+}
+
+.welcomeimg {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menusec{
+    background-color:#f4e7b2;
+    width:100%;
+    
+}
+h1{
+    text-align: center;
+    font-size:3rem;
+    margin-bottom:10px;
+    color:#d96ea0
+}
+
+
+/* ABOUT PAGE */
+
+/* MENU PAGE */
+
+/* CONTACT PAGE */
