@@ -8,9 +8,17 @@
     src:url(fonts/Hug\ Me\ Tight\ -\ OTF.otf);
 }
 
+@font-face{
+    font-family:font-again;
+    src:url(fonts/Carmilla\ Personal\ Use.otf);
+}
 body{
     background-color:#f9f4e0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
+
 .nav {
     height:120px;
     display: flex;
@@ -19,6 +27,7 @@ body{
     padding: 10px 50px;
     background-color: #f4e7b2;
     position: relative;
+    width:100%;
 }
 
 .logo {
@@ -29,6 +38,7 @@ body{
 .nav-links {
     display: flex;
     gap: 20px;
+    font-family:my-other-font;
 }
 
 .nav-links a {
@@ -92,7 +102,6 @@ body{
     flex-direction: column;
     gap: 20px;
     max-width: 600px;
-    font-family: my-other-font;
 }
 
 .h2 {
@@ -100,6 +109,7 @@ body{
     text-align: center; 
     margin: 0;
     margin-bottom:10px;
+    font-family:my-other-font;
 }
 
 .wmess {
@@ -107,10 +117,12 @@ body{
     line-height: 1.6;
     margin: 0;
     margin-bottom:8px;
+    font-family:font-again;
+    font-weight:bold;
 }
 
 
-    .abtbtn {
+.abtbtn {
     display: inline-block;
     background-color: #d96ea0;
     color: #fff;
@@ -121,6 +133,7 @@ body{
     font-size:20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     align-self: flex-start;
+    font-family:my-other-font;
 }
 
 
@@ -140,13 +153,199 @@ body{
 .menusec{
     background-color:#f4e7b2;
     width:100%;
+    padding:40px;
+    text-align:center;
+    
     
 }
 h1{
     text-align: center;
-    font-size:3rem;
-    margin-bottom:10px;
-    color:#d96ea0
+    font-size:55px;
+    margin-bottom:15px;
+    color:#d96ea0;
+    font-family:my-other-font;
+
+}
+
+.menup {
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-family:font-again;
+    font-weight:bold;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content:center;
+    
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+figure {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 3px solid #d96ea0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color:#ffebf4;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size:15px;
+
+}
+
+figcaption{
+    font-family:font-again;
+    font-size:20px;
+    font-weight:bold;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border:3px solif #d96ea0
+}
+
+/*
+figure:hover {
+    transform: scale(1.03);
+    border: 3px solid #f2a6a6;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+    */
+
+.menubtn {
+    display: inline-block;
+    background-color: #d96ea0;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 110px;
+    font-size:20px;
+    font-family:my-other-font;
+}
+
+.menubtn:hover {
+    background-color: #ac3d71;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #fce8f1; /* light soft pink */
+    padding: 60px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+footer h2 {
+    font-size: 2.8rem;
+    color: #d96ea0;
+    margin-bottom: 10px;
+    font-family: my-other-font;
+}
+
+footer .footp {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer .sign {
+    margin-top: 40px;
+}
+
+footer form {
+    margin-top: 10px;
+}
+
+footer input[type="email"] {
+    padding: 12px 20px;
+    border: 2px solid #d96ea0;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 250px;
+    max-width: 80%;
+}
+
+footer .subbtn {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #d96ea0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family:my-other-font;
+    font-size:25px;
+}
+
+footer .subbtn:hover {
+    background-color: #ac3d71;
+    transform: scale(1.05);
+}
+
+footer .navigate {
+    margin-top: 50px;
+}
+
+footer .navigate a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #3d3d3d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .navigate a:hover {
+    color: #d96ea0;
+}
+
+/* Optional: Responsive tweaks */
+@media (max-width: 600px) {
+    footer h2, footer .footp, footer ul li {
+        font-size: 1rem;
+    }
+
+    footer input[type="email"] {
+        width: 90%;
+    }
+
+    footer .navigate a {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 
