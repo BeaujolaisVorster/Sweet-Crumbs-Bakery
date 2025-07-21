@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family:my-font;
     src: url(fonts/Cute\ Notes.ttf);
@@ -110,6 +114,8 @@ body{
     margin: 0;
     margin-bottom:10px;
     font-family:my-other-font;
+    color:#2b2a2a;
+    text-shadow: 5px 5px 10px #ac3d71;
 }
 
 .wmess {
@@ -158,7 +164,7 @@ body{
     
     
 }
-h1{
+.menuh1{
     text-align: center;
     font-size:55px;
     margin-bottom:15px;
@@ -326,6 +332,7 @@ footer .navigate a {
     color: #3d3d3d;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-family:font-again;
 }
 
 footer .navigate a:hover {
@@ -351,6 +358,283 @@ footer .navigate a:hover {
 
 /* ABOUT PAGE */
 
+.heading{
+    text-align: center;
+    font-size:70px;
+    margin-bottom:15px;
+    color:#ac3d71;
+    font-family:my-font;
+    padding:40px;
+
+}
+
+.story{
+    background-color:#fddfed;
+}
+.title, .title2{
+    font-family:my-other-font;
+    font-size:55px;
+    text-shadow: 5px 5px 10px #ac3d71;
+    color:#2b2a2a;
+    text-align:center;
+    margin-bottom:40px;
+    padding:30px;
+
+}
+
+.storyp{
+    font-family:font-again;
+    font-weight:bold;
+    font-size: 25px;
+    text-align:center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 10px;    
+    line-height: 1.6;
+}
+
+.values{
+    font-family:font-again;
+    font-weight:bold;
+    font-size: 30px;
+    text-align:center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;    
+    line-height: 1.6;
+    list-style-type: none;
+}
+
 /* MENU PAGE */
 
+.cupcakes,
+.Cakes,
+.P\&B,
+.drinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+}
+
+.cupcakes div,
+.Cakes div,
+.P\&B div,
+.drinks div {
+  background-color: #ffffff;
+  border: 2px solid #ffd6e8;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+
+}
+
+.cupcakes div:hover,
+.Cakes div:hover,
+.P\&B div:hover,
+.drinks div:hover {
+  transform: scale(1.03);
+  border-color: #d96ea0;
+}
+
+/* Specials */
+.spec {
+  text-align: center;
+  font-size: 2rem;
+  color: #ac3d71;
+  margin-top: 60px;
+  font-family:my-other-font;
+}
+
+p {
+  text-align: center;
+  max-width: 700px;
+  margin: 10px auto 60px;
+  font-size: 1.2rem;
+  color: #000000;
+  font-family:font-again;
+  font-weight:bold;
+}
+
+.Cake, .pastries, .dri, .cupc{
+    text-align:center;
+    font-family:my-other-font;
+    color:#d96ea0;
+    font-size:2rem;
+
+}
 /* CONTACT PAGE */
+.contact{
+    text-align:center;
+    font-size:70px;
+    font-family:my-font;
+    color:#ac3d71
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.ourinfo {
+  flex: 1 1 400px;
+  color: #000000;
+}
+
+.map {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Form layout */
+form {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  color: #333;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 60px;
+  color: #d96ea0;
+  font-family:my-other-font;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Input field rows */
+.form-row {
+  display: flex;
+  gap: 4%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1 1 48%;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #d96ea0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #ac3d71;
+  outline: none;
+}
+
+/* Message input (full width) */
+.panel {
+  margin-top: 20px;
+}
+
+.panel textarea#message {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #d96ea0;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.panel input#message:focus {
+  border-color: #ac3d71;
+  outline: none;
+}
+
+/* Submit button */
+.subbtn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 14px 40px;
+  background-color: #d96ea0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family:my-other-font;
+  font-size:25px;
+}
+
+.subbtn:hover {
+  background-color: #ac3d71;
+  transform: scale(1.05);
+}
+
+/* Headings inside info blocks */
+h2.address,
+h2.hours,
+h2.num,
+h2.email,
+.map h2 {
+  color: #ac3d71;
+  margin-top: 30px;
+  font-family:my-other-font;
+}
+
+.ouradd, .open, .callus, .emailus{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ourinfo, .map {
+    width: 100% !important;
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
